@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"log"
+	"net/http"
+
+	"github.com/guisantosalves/API-Golang-mysql/router"
+)
 
 func main() {
-	fmt.Println("Starting my application.")
+
+	log.Fatal(http.ListenAndServe(":9000", router.InitializeRouter()))
+
 }
