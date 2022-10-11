@@ -16,6 +16,7 @@ func GetUser(w http.ResponseWriter, r *http.Request) {
 
 }
 
+// working
 func CreateUser(w http.ResponseWriter, r *http.Request) {
 	// setting in header
 	w.Header().Set("Content-Type", "application/json")

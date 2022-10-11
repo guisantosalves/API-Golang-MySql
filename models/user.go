@@ -13,7 +13,7 @@ var stringConnection = os.Getenv("CONNECTIONSTR")
 var DB *gorm.DB
 var err error
 
-var DNS = "root:$uportE99@tcp(127.0.0.1:3306)/user?charset=utf8mb4&parseTime=True&loc=Local"
+var DNS = "root:15022002@/users"
 
 type User struct {
 	gorm.Model
