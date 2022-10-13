@@ -13,7 +13,8 @@ var stringConnection = os.Getenv("CONNECTIONSTR")
 var DB *gorm.DB
 var err error
 
-var DNS = "root:15022002@/users"
+// we need to parsetime if doesn't do that the data comes uncorrectly
+var DNS = "root:15022002@/users?parseTime=true"
 
 type User struct {
 	gorm.Model
