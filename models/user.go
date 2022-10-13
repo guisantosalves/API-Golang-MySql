@@ -2,19 +2,16 @@ package models
 
 import (
 	"fmt"
-	"os"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
 
-var stringConnection = os.Getenv("CONNECTIONSTR")
-
 var DB *gorm.DB
 var err error
 
 // we need to parsetime if doesn't do that the data comes uncorrectly
-var DNS = "root:15022002@/users?parseTime=true"
+var DNS = "string to connect"
 
 type User struct {
 	gorm.Model
