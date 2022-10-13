@@ -9,4 +9,5 @@ It's an API with mux package and using the object relational mapping (ORM) mysql
 </ul>
 
 # Developer Note
+<p>to connect with mysql use a string like this user:password@/dbName?parseTime=true</p>
 <p>if you want to implement my code and make a merge request you can do that, I will be so glad :)</p>
